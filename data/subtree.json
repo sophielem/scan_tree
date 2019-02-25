@@ -1,0 +1,35 @@
+{
+    "name": "first",
+    "children": [
+        {
+            "name": "four",
+            "children": [
+                {
+                    "name": "Chlamydophila caviae GPIC GCF_000007605.1"
+                },
+                {
+                    "name": "Chlamydophila pneumoniae CWL029 GCF_000008745.1"
+                }
+            ]
+        },
+        {
+            "name": "two",
+            "children": [
+                {
+                    "name": "three",
+                    "children": [
+                        {
+                            "name": "Mycoplasma bovoculi M165/69 GCF_000524555.1"
+                        },
+                        {
+                            "name": "Mycoplasma bovis PG45 GCF_000183385.1"
+                        }
+                    ]
+                },
+                {
+                    "name": "Mycoplasma crocodyli MP145 GCF_000025845.1"
+                }
+            ]
+        }
+    ]
+}

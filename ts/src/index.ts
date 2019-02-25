@@ -12,7 +12,9 @@ interface Node {
   children?: Node[];
 }
 
-
+function isNode(node: any): boolean{
+    return node.hasOwnProperty("text") && typeof node.text == 'string';
+}
 // function work(tree_data: any): [number, number] {
 //   // Si pas d'enfants, il s'agit d'une feuille
 //   if (!tree_data.hasOwnProperty("children"))
@@ -31,6 +33,11 @@ interface Node {
 // }
 
 function work2(tree_data: any): [number, number] {
+    if (!isNode(tree_data)){
+        console.log("Error: No conform file");
+        process.exit()
+    }
+
     // Si pas d'enfants, il s'agit d'une feuille
     if (!tree_data.hasOwnProperty("children"))
         return [0, 1];
